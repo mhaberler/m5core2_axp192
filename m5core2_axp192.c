@@ -41,9 +41,9 @@ esp_err_t m5core2_init() {
         ESP_LOGI(TAG, "\tESP32 power voltage set to 3.35v");
     }
 
-    if (m5core2_set_rail_mv(LCD_BACKLIGHT, 2800) == ESP_OK &&
+    if (m5core2_set_rail_mv(LCD_BACKLIGHT, 3200) == ESP_OK &&
         m5core2_set_rail_state(LCD_BACKLIGHT, true) == ESP_OK) {
-        ESP_LOGI(TAG, "\tLCD backlight voltage set to 2.80v");
+        ESP_LOGI(TAG, "\tLCD backlight voltage set to 3.20v");
     }
 
     if (m5core2_set_rail_mv(LOGIC_AND_SD, 3300) == ESP_OK &&
